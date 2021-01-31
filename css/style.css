@@ -102,6 +102,11 @@ img {
   align-items: center;
   text-align: center;
 }
+.hero-content {
+  width: 696px;
+  margin: auto;
+}
+
 .section-one {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -113,12 +118,19 @@ img {
 .section-one li:not(:last-child) {
   margin-right: 30px;
 }
+
+.features-list {
+  width: 270px;
+}
 .section-two {
   padding-bottom: 94px;
 }
 .section-two ul {
   display: flex;
   justify-content: space-between;
+}
+.icon {
+  width: 370px;
 }
 .section-three {
   padding-top: 94px;
@@ -131,10 +143,20 @@ img {
 }
 .team-list p {
   margin-top: 10px;
-  margin-bottom: 30px;
 }
-.team-list h3 {
-  margin-top: 30px;
+.team-content {
+  padding: 30px 57px;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+.team-list li {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 .footer {
   padding-top: 60px;
@@ -148,8 +170,7 @@ img {
 .buttons li:not(:last-child) {
   margin-right: 8px;
 }
-/* .buttons {
-  margin-bottom: 50px; */
+
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -214,8 +235,6 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-left: 250px;
-  margin-right: 250px;
   margin-bottom: 30px;
 }
 
